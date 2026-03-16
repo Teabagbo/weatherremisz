@@ -45,3 +45,6 @@ client.subscribe("origin/a/wis2/+/data/core/weather/surface-based-observations/m
 
 print("Bot is live and watching the skies...")
 client.loop_forever()
+# Add this right before client.loop_forever()
+send_telegram("🚀 Weather Bot has started and is listening for London, Paris, and Munich!")
+client.loop_forever()
